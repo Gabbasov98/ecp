@@ -5,6 +5,14 @@
 .mfg {
     position: relative;
     margin: 0;
+    &__error{
+        position: absolute;
+        color: red;
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
     input ,
     textarea{
         border: none;
@@ -18,6 +26,11 @@
         font-weight: 400;
         &::placeholder {
             color: $black;
+        }
+        &.error{
+            &~.mfg__error{
+                opacity: 1;
+            }
         }
     }
     textarea{
