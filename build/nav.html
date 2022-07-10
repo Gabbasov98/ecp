@@ -1,0 +1,144 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
+            Быстрый заказ
+        </button>
+
+    </div>
+
+    <div class="modal" id="callModal">
+    <div class="modal__dialog">
+        <button type="button" class="modal__close mbtn" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.444032 2.85645C-0.148011 2.26441 -0.148011 1.30451 0.444032 0.712469C1.03607 0.120424 1.99596 0.120424 2.58801 0.712469L9.55592 7.68042C10.148 8.27246 10.148 9.23235 9.55592 9.8244C8.96388 10.4164 8.00399 10.4164 7.41195 9.8244L0.444032 2.85645Z" fill="#120B3E"/>
+                <path d="M7.41199 0.712466C8.00404 0.120421 8.96393 0.120421 9.55597 0.712466C10.148 1.30451 10.148 2.26441 9.55597 2.85645L2.58805 9.8244C1.99601 10.4164 1.03612 10.4164 0.444076 9.8244C-0.147966 9.23235 -0.147966 8.27246 0.444076 7.68041L7.41199 0.712466Z" fill="#120B3E"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">
+            <span>Заказать</span> <br> обратный звонок
+        </div>
+        <div class="modal__desc body-text">Оставьте заявку и наш юрист  свяжется с вами</div>
+        <form class="modal__form">
+            <fieldset class='mfg'>
+                <input type='text' placeholder="Имя"/>
+            </fieldset>
+            <fieldset class='mfg'>
+                <input type='tel' placeholder="Телефон *"/>
+            </fieldset>
+            <fieldset class='mfg'>
+                <input type='email' placeholder="Email"/>
+            </fieldset>
+            <div class="modal__hint body-text3">Нажимая кнопку я даю своё согласие на обработку моих персональных данных</div>
+            <button class="modal__btn mbtn mbtn-primary">
+                <span>Оправить</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal2" id="selectModal">
+    <div class="modal__dialog">
+        <button type="button" class="modal__close mbtn" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.444032 2.85645C-0.148011 2.26441 -0.148011 1.30451 0.444032 0.712469C1.03607 0.120424 1.99596 0.120424 2.58801 0.712469L9.55592 7.68042C10.148 8.27246 10.148 9.23235 9.55592 9.8244C8.96388 10.4164 8.00399 10.4164 7.41195 9.8244L0.444032 2.85645Z" fill="#120B3E"/>
+                <path d="M7.41199 0.712466C8.00404 0.120421 8.96393 0.120421 9.55597 0.712466C10.148 1.30451 10.148 2.26441 9.55597 2.85645L2.58805 9.8244C1.99601 10.4164 1.03612 10.4164 0.444076 9.8244C-0.147966 9.23235 -0.147966 8.27246 0.444076 7.68041L7.41199 0.712466Z" fill="#120B3E"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">
+            <span>Подобрать ЭЦП</span>
+        </div>
+        <div class="modal__desc body-text">Оставьте заявку и наш юрист  свяжется с вами</div>
+        <form class="modal__form">
+            <fieldset class='mfg'>
+                <input type='text' placeholder="Имя"/>
+            </fieldset>
+            <fieldset class='mfg'>
+                <input type='tel' placeholder="Телефон *"/>
+            </fieldset>
+            <button class="modal__btn mbtn mbtn-primary">
+                <span>Подобрать</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal3" id="consultModal">
+    <div class="modal__dialog">
+        <button type="button" class="modal__close mbtn" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.444032 2.85645C-0.148011 2.26441 -0.148011 1.30451 0.444032 0.712469C1.03607 0.120424 1.99596 0.120424 2.58801 0.712469L9.55592 7.68042C10.148 8.27246 10.148 9.23235 9.55592 9.8244C8.96388 10.4164 8.00399 10.4164 7.41195 9.8244L0.444032 2.85645Z" fill="#120B3E"/>
+                <path d="M7.41199 0.712466C8.00404 0.120421 8.96393 0.120421 9.55597 0.712466C10.148 1.30451 10.148 2.26441 9.55597 2.85645L2.58805 9.8244C1.99601 10.4164 1.03612 10.4164 0.444076 9.8244C-0.147966 9.23235 -0.147966 8.27246 0.444076 7.68041L7.41199 0.712466Z" fill="#120B3E"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">
+            <span>Заявка</span> на бесплатную консультацию
+        </div>
+        <div class="modal__desc body-text">Оставьте заявку и наш юрист  свяжется с вами</div>
+        <form class="modal__form modal__form--grid">
+            <fieldset class='mfg'>
+                <input type='text' placeholder="Имя"/>
+            </fieldset>
+            <fieldset class='mfg modal__fg12'>
+                <input type='tel' placeholder="Телефон *"/>
+            </fieldset>
+            <fieldset class='mfg'>
+                <input type='email' placeholder="Email"/>
+            </fieldset>
+            <fieldset class='mfg modal__fg13'>
+                <textarea placeholder="Введите вопрос"></textarea>
+            </fieldset>
+            <div class="modal__hint body-text3">Нажимая кнопку я даю своё согласие на обработку моих персональных данных</div>
+            <button class="modal__btn mbtn mbtn-primary">
+                <span>Оправить</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- <div class="modal-backdrop show"></div> -->
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <section class="main">
+                <div class="container">
+                    <div class="main__inner">
+                        <div class="main__bg">
+                            <div class="main__img1">
+                                <img src="img/main-bg1.svg" alt="">
+                            </div>
+                            <div class="main__img2">
+                                <img src="img/main-bg2.svg" alt="">
+                            </div>
+                            <div class="main__img3">
+                                <img src="img/main-bg3.svg" alt="">
+                            </div>
+                        </div>
+                        <h1 class="main__title">Электронная цифровая подпись</h1>
+                        <div class="main__city">в Москве</div>
+                        <button data-modal="selectModal" class="main__btn mbtn display5">
+                            <span>Подобрать электронную подпись</span>
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="21.8609" cy="16" rx="10.8364" ry="10.6667" fill="url(#paint0_linear_183_63)"/>
+                                <path class="path1" d="M25.6742 15.9451C25.8695 15.7498 25.8695 15.4333 25.6742 15.238L22.4922 12.056C22.297 11.8608 21.9804 11.8608 21.7851 12.056C21.5898 12.2513 21.5898 12.5679 21.7851 12.7631L24.6135 15.5916L21.7851 18.42C21.5898 18.6152 21.5898 18.9318 21.7851 19.1271C21.9804 19.3223 22.297 19.3223 22.4922 19.1271L25.6742 15.9451ZM11.0244 16.0916L25.3206 16.0916L25.3206 15.0916L11.0244 15.0916L11.0244 16.0916Z" fill="white"/>
+                                <path d="M11.0244 15.5916L0.697322 15.5916" stroke="url(#paint1_linear_183_63)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_183_63" x1="11.0244" y1="5.33337" x2="30.8691" y2="26.9793" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#C049F4"/>
+                                        <stop offset="1" stop-color="#507BF5"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_183_63" x1="11.0244" y1="15.5916" x2="10.8574" y2="13.7392" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#C049F4"/>
+                                        <stop offset="1" stop-color="#507BF5"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                        <div class="main__bottom">
+                            <div class="main__items">
+                                <div class="main__item display5">
+                                    <i class="main__item-icon">
+                                        <img src="img/main-icon.svg" alt="">
+                                    </i>
+                                    <span>Без очередей</span>
+                                </div>
+                                <div class="main__item display5">
+                                    <i class="main__item-icon">
+                                        <img src="img/main-icon2.svg" alt="">
+                                    </i>
+                                    <span>Без посещения ФНС</span>
+                                </div>
+                                <div class="main__item display5">
+                                    <i class="main__item-icon">
+                                        <img src="img/main-icon3.svg" alt="">
+                                    </i>
+                                    <span>По 2 документам</span>
+                                </div>
+                            </div>
+                            <div class="main__price display2">от 2900 руб</div>
+                        </div>
+                    </div>
+                    <div class="advantages">
+                        <div class="advantages__card animate-cards">
+                            <img src="img/advantage-bg.svg" alt="" class="advantages__bg advantages__bg1">
+                            <div class="advantages__left">
+                                <div class="advantages__title display2">Быстро </div>
+                                <div class="advantages__icon">
+                                    <img src="img/advantage-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advantages__right">
+                                <ul class="advantages__items mlist body-text">
+                                    <li class="advantages__item">выпуск ЭЦП в течение 15 минут</li>
+                                    <li class="advantages__item">оформление заявки без очередей</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="advantages__card animate-cards">
+                            <img src="img/advantage-bg2.svg" alt="" class="advantages__bg advantages__bg2">
+                            <img src="img/advantage-bg3.svg" alt="" class="advantages__bg advantages__bg3">
+                            <div class="advantages__left">
+                                <div class="advantages__title display2">Надежно</div>
+                                <div class="advantages__icon">
+                                    <img src="img/advantage-icon2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advantages__right">
+                                <ul class="advantages__items mlist body-text">
+                                    <li class="advantages__item">
+                                        филиал аккредитованного УЦ
+                                        <span class="body-text2">(АО «Аналитический центр»)</span>
+                                    </li>
+                                    <li class="advantages__item">
+                                        Доверенное лицо УЦ ФНС
+                                        <span class="body-text2">(АО «Аналитический центр»)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <div class="about__title display1">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.3724" cy="12.361" r="12.1283" transform="rotate(-180 12.3724 12.361)" fill="#9C4FFF"/>
+                        </svg>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.8586" cy="12.361" r="12.1283" transform="rotate(-180 12.8586 12.361)" fill="#507BF5"/>
+                        </svg>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.3448" cy="12.361" r="12.1283" transform="rotate(-180 12.3448 12.361)" fill="#120B3E"/>
+                        </svg>
+                        <span>О нас</span>
+                    </div>
+                    <div class="about__desc body-text">
+                        <p>Наша компания является официальным партнером Удостоверяющего Центра «Основание» (АО “Аналитический Центр”) в Москве. В нашем офисе вы сможете оформить ЭЦП для любых нужд, как для физических, так и для юридических лиц и индивидуальных предпринимателей.</p>
+                        <p>УЦ «Основание» (создан на базе АО «Аналитический Центр») - один из крупнейших удостоверяющих центров в России - более 200 филиалов.</p>
+                    </div>
+                    <div class="about__inner">
+                        <div class="about__left">
+                            <div class="about__items">
+                                <div class="about__item animate-cards">
+                                    <i class="about__icon">
+                                        <img src="img/about-icon.svg" alt="">
+                                    </i>
+                                    <div class="about__text body-text">Соответствует повышенным требованиям к <br> удостоверяющим центрам</div>
+                                </div>
+                                <div class="about__item animate-cards">
+                                    <i class="about__icon">
+                                        <img src="img/about-icon5.svg" alt="">
+                                    </i>
+                                    <div class="about__text body-text">
+                                        Доверенное лицо <span>УЦ ФНС России</span> Приказ <br> ФНС России № ЕД<span>-7-24/717@</span>
+                                    </div>
+                                </div>
+                                <div class="about__item animate-cards">
+                                    <i class="about__icon">
+                                        <img src="img/about-icon3.svg" alt="">
+                                    </i>
+                                    <div class="about__text body-text">
+                                        Имеет доступ к работе с <span>криптографией <br> </span> (лицензия ФСБ от <span>25.11.2020</span> года)
+                                    </div>
+                                </div>
+                                <div class="about__item animate-cards">
+                                    <i class="about__icon">
+                                        <img src="img/about-icon4.svg" alt="">
+                                    </i>
+                                    <div class="about__text body-text">
+                                        <span>Аккредитован Министерством цифрового развития,</span> связи и массовых коммуникаций (Приказ Минкомсвязи России №<span>668</span> от <span>4</span> декабря <span>2020</span> года
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__right">
+                            <div class="about-comfort">
+                                <img src="img/comfort-bg.svg" alt="" class="about-comfort__bg">
+                                <div class="about-comfort__top">
+                                    <div class="about-comfort__title display2">Удобно</div>
+                                    <img src="img/comfort.svg" alt="">
+                                </div>
+                                <ul class="about-comfort__list mlist body-text">
+                                    <li class="about-comfort__item">офис в 3-х минутах от м. Новокузнецкая</li>
+                                    <li class="about-comfort__item">менеджеры помогут в сборе пакета документов</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience">
+                <div class="container">
+                    <div class="experience__inner">
+                        <div class="experience__left">
+                            <div class="experience__years">16 лет</div>
+                            <div class="experience__subtitle display2">опыта</div>
+                        </div>
+                        <div class="experience__right">
+                            <div class="experience__title display4">У сотрудников УЦ «Основание» более 16 лет опыта работы на рынке электронной подписи и EDI.</div>
+                            <div class="experience__desc body-text">Сейчас к удостоверяющим центрам действуют повышенные требования законодательства. С 1 января 2022 года руководители компаний и ИП могут получать КЭП только в УЦ ФНС России или у его доверенных лиц. Электронные подписи, выданные удостоверяющими центрами без аккредитации по повышенным требованиям, прекратят свое действие. </div>
+                            <a href="" class="experience__link">Сертификаты</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="consult">
+                <div class="container">
+                    <div class="consult__inner animate-cards">
+                        <div class="consult__left">
+                            <div class="consult__subtitle body-text">С нами</div>
+                            <div class="consult__title display1">Безопасно</div>
+                        </div>
+                        <div class="consult__items">
+                            <div class="consult__item body-text">
+                                Являемся оператором <span>персональных данных</span> с 2010 г.
+                            </div>
+                            <div class="consult__item body-text">
+                                Гарантируем <span>защиту</span> персональных данных
+                            </div>
+                        </div>
+                        <button data-modal="callModal" class="consult__btn mbtn mbtn-primary">
+                            <span>Консультация</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="e-signature">
+                <div class="container">
+                    <div class="e-signature__inner">
+                        <div class="e-signature__left">
+                            <div class="e-signature__title display1">
+                                <span>Как получить</span> электронную подпись
+                            </div>
+                            <div class="e-signature__items">
+                                <div class="e-signature__item">
+                                    <div class="e-signature__num display1">
+                                        <span>1</span>
+                                        <img src="img/step.svg" alt="">
+                                    </div>
+                                    <div class="e-signature__text">
+                                        <div class="e-signature__subtitle display5">Закажите ЭЦП</div>
+                                        <div class="e-signature__desc body-text">Заполните заявку на сайте, свяжитесь с нами по телефону или через электронную почту.</div>
+                                    </div>
+                                </div>
+                                <div class="e-signature__item">
+                                    <div class="e-signature__num display1">
+                                        <span>2</span>
+                                        <img src="img/step2.svg" alt="">
+                                    </div>
+                                    <div class="e-signature__text">
+                                        <div class="e-signature__subtitle display5">Отправьте документы</div>
+                                        <div class="e-signature__desc body-text">Достаточно двух документов: паспорт и СНИЛС</div>
+                                    </div>
+                                </div>
+                                <div class="e-signature__item">
+                                    <div class="e-signature__num display1">
+                                        <span>3</span>
+                                        <img src="img/step3.svg" alt="">
+                                    </div>
+                                    <div class="e-signature__text">
+                                        <div class="e-signature__subtitle display5">Получите ЭЦП</div>
+                                        <div class="e-signature__desc body-text">Проверим документы и выпустим сертификат. Заказать и получить ключ можно в нашем офисе</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="e-signature__bg">
+                            <div class="e-signature__img e-signature__img1">
+                                <img src="img/sign1.svg" alt="">
+                            </div>
+                            <div class="e-signature__img e-signature__img2">
+                                <img src="img/sign2.svg" alt="">
+                            </div>
+                            <div class="e-signature__img e-signature__img3">
+                                <img src="img/sign3.svg" alt="">
+                            </div>
+                            <div class="e-signature__img e-signature__img4">
+                                <img src="img/sign4.svg" alt="">
+                            </div>
+                            <div class="e-signature__img e-signature__img5">
+                                <img src="img/sign5.svg" alt="">
+                            </div>
+                            <div class="e-signature__img e-signature__img6">
+                                <img src="img/sign6.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="e-signature__bottom">
+                        <div class="e-signature__hint display3">Если у вас остались вопросы, позвоните</div>
+                        <a href="tel:+74951508502" class="e-signature__phone display2">+7(495)150-85-02</a>
+                        <div class="e-signature__socials">
+                            <a href="" class="e-signature__socials-item">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.47571 13.9952C2.47571 7.78099 7.51275 2.74292 13.7257 2.74292C19.9387 2.74292 24.9757 7.78099 24.9757 13.9906C24.9757 20.2048 19.9387 25.2429 13.7257 25.2429C11.6192 25.2429 9.647 24.6641 7.96182 23.6546L2.8646 25.067L4.31367 20.1585C3.15163 18.3897 2.47571 16.2689 2.47571 13.9952ZM20.4968 17.1254C20.6498 17.1939 20.75 17.3416 20.7658 17.5103C20.7816 17.7054 20.7869 17.9375 20.75 18.2064V18.2222C20.6445 18.9289 20.2332 19.5564 19.6478 19.973C19.4263 20.1365 19.1521 20.2894 18.8252 20.416C18.1132 20.6849 17.491 20.6797 17.1535 20.648C16.3256 20.5478 15.0916 20.3052 13.731 19.6513C12.2597 18.9447 11.3316 18.0957 10.5828 17.4048C9.91833 16.7984 8.93747 15.8808 8.03572 14.399C7.5031 13.5289 7.14978 12.7062 6.9072 12.0154C6.6488 11.2771 6.60662 10.4755 6.82283 9.72671C6.83074 9.70035 6.83865 9.6753 6.84656 9.65025C6.85447 9.6252 6.86238 9.60015 6.87029 9.57378C7.0654 8.98316 7.36072 8.53491 7.60857 8.23433C7.81423 7.9812 8.14119 7.68062 8.58943 7.61734C8.74763 7.59624 8.96384 7.59624 9.20642 7.60151C9.29078 7.60151 9.3699 7.60151 9.44372 7.60679C9.65993 7.61733 9.8656 7.69644 10.0238 7.83882C10.0238 7.83882 10.066 7.87573 10.1029 7.91265C10.3191 8.13413 10.8781 9.57378 11.1576 10.3173C11.3211 10.7656 11.3527 11.256 11.2051 11.7095C11.2051 11.7095 11.1998 11.7148 11.1998 11.7201C10.9625 12.4531 10.4299 12.8486 10.2347 12.9804C10.625 13.6923 11.3211 14.7839 12.5076 15.8017C13.499 16.656 14.4799 17.1623 15.2076 17.4629C15.3605 17.5261 15.5345 17.4839 15.6453 17.3574L17.048 15.7754C17.1324 15.6752 17.2748 15.6488 17.3908 15.7015C17.9075 15.9388 18.4256 16.1761 18.9437 16.4134C19.4618 16.6507 19.98 16.888 20.4968 17.1254Z" fill="#3DCB4B"/>
+                                </svg>
+                            </a>
+                            <a href="" class="e-signature__socials-item">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.7855 5.67304L22.1248 22.9367C21.8486 24.1551 21.1284 24.4583 20.1049 23.8844L14.5273 19.7742L11.836 22.3627C11.5383 22.6605 11.2891 22.9097 10.7151 22.9097L11.1158 17.229L21.4534 7.88783C21.9028 7.48715 21.3559 7.26509 20.7548 7.66582L7.97503 15.7128L2.4732 13.9908C1.27644 13.6171 1.25482 12.794 2.72226 12.22L24.2422 3.92938C25.2385 3.55575 26.1104 4.15134 25.7855 5.67304Z" fill="#20A0E1"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <img src="img/info-img.svg" alt="" class="info__img info__img1">
+                <img src="img/info-img2.svg" alt="" class="info__img info__img2">
+                <div class="container">
+                    <div class="info__inner">
+                        <div class="info__left">
+                            <div class="info__title display1">
+                                Электронная подпись <span>для любых целей</span>
+                            </div>
+                            <div class="info__items">
+                                <div class="info__item body-text">
+                                    <i class="info__icon">
+                                        <img src="img/info-icon.svg" alt="">
+                                    </i>
+                                    <span>Физическим лицам и сотрудникам компаний</span>
+                                </div>
+                                <div class="info__item body-text">
+                                    <i class="info__icon">
+                                        <img src="img/info-icon2.svg" alt="">
+                                    </i>
+                                    <span>Руководителям юридических лиц </span>
+                                </div>
+                                <div class="info__item body-text">
+                                    <i class="info__icon">
+                                        <img src="img/info-icon3.svg" alt="">
+                                    </i>
+                                    <span>Индивидуальным предпринимателям</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__right">
+                            <div class="info__cards">
+                                <div class="info__card">
+                                    <div class="info__subtitle display4">КЭП для физических лиц от УЦ Основание»</div>
+                                    <ul class="info__list mlist body-text">
+                                        <li>Зарегистрируйте юр лицо или ИП;</li>
+                                        <li>Выполняйте трудовые обязанности от лица организации;</li>
+                                        <li>Получите доступ ко всем возможностям портала Госуслуги;</li>
+                                        <li>Оформляйте кредиты;</li>
+                                        <li>Принимайте участие в торгах;</li>
+                                        <li>Работайте удаленно.</li>
+                                    </ul>
+                                    <button data-modal="consultModal" class="info__link display5">
+                                        <span>Узнать больше</span>
+                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="21.8609" cy="16.9307" rx="10.8364" ry="10.6667" fill="white"/>
+                                            <path d="M25.6743 16.8758C25.8695 16.6805 25.8695 16.3639 25.6743 16.1687L22.4923 12.9867C22.297 12.7914 21.9804 12.7914 21.7852 12.9867C21.5899 13.1819 21.5899 13.4985 21.7852 13.6938L24.6136 16.5222L21.7852 19.3506C21.5899 19.5459 21.5899 19.8625 21.7852 20.0578C21.9804 20.253 22.297 20.253 22.4923 20.0578L25.6743 16.8758ZM11.0245 17.0222L25.3207 17.0222L25.3207 16.0222L11.0245 16.0222L11.0245 17.0222Z" fill="#9C4FFF"/>
+                                            <path d="M11.0245 16.5222L0.697391 16.5222" stroke="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="info__card">
+                                    <div class="info__subtitle display4">КЭП для юридических лиц и ИП от УЦ ФНС России</div>
+                                    <ul class="info__list mlist body-text">
+                                        <li>Подавайте отчетность без очередей и посещения контролирующих органов;</li>
+                                        <li>Принимайте участие в электронных торгах;</li>
+                                        <li>Введите электронный документооборот внутри компании, с контрагентами и органами власти;</li>
+                                        <li>Используйте все возможности информационных систем: ФНС, Госуслуги, Федресурс, ФГИС ЕАИС, ЭПТС, ЭТС.</li>
+                                    </ul>
+                                    <button data-modal="consultModal" class="info__link display5">
+                                        <span>Узнать больше</span>
+                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="21.8609" cy="16.9307" rx="10.8364" ry="10.6667" fill="white"/>
+                                            <path d="M25.6743 16.8758C25.8695 16.6805 25.8695 16.3639 25.6743 16.1687L22.4923 12.9867C22.297 12.7914 21.9804 12.7914 21.7852 12.9867C21.5899 13.1819 21.5899 13.4985 21.7852 13.6938L24.6136 16.5222L21.7852 19.3506C21.5899 19.5459 21.5899 19.8625 21.7852 20.0578C21.9804 20.253 22.297 20.253 22.4923 20.0578L25.6743 16.8758ZM11.0245 17.0222L25.3207 17.0222L25.3207 16.0222L11.0245 16.0222L11.0245 17.0222Z" fill="#507bf5"/>
+                                            <path d="M11.0245 16.5222L0.697391 16.5222" stroke="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

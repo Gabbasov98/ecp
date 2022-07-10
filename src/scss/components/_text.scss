@@ -1,0 +1,110 @@
+@import "../vars";
+.display1{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 128%;
+}
+
+.display2{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.display3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.display4{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.display5{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.body-text{
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.body-text2{
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.body-text3{
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+p{
+  line-height: inherit;
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+.mlist{
+  li{
+    padding-left: 30px;
+    position: relative;
+    line-height: inherit;
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: $primary2;
+      border-radius: 50%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media screen and (max-width: 1130px){
+  .display2,
+  .display3{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .display1{
+    font-size: 30px;
+  }
+  .display2{
+    font-size: 18px;
+  }
+  .display4,
+  .display5{
+    font-size: 16px;
+  }
+  .body-text{
+    font-size: 14px;
+  }
+  .body-text2{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .display1{
+    font-size: 24px;
+  }
+}

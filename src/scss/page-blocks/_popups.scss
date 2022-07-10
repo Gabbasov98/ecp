@@ -1,0 +1,123 @@
+@import '../vars';
+@import '../mixins';
+.modal {
+    background: rgba(#000, .7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    &--active{
+        opacity: 1;
+        pointer-events: unset;
+    }
+    &__dialog{
+        background-color: #fff;
+        box-shadow: 0px -1px 15px rgba(80, 123, 245, 0.15);
+        width: 300px;
+        max-width: 100%;
+        padding: 26px 22px;
+        position: relative;
+    }
+    &__close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(50%,-50%);
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+        background: $gray2;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+    }
+    &__title{
+        span{
+            color: $primary;
+        }
+    }
+    &__desc{
+        margin-top: 10px;
+    }
+    &__form{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 22px;
+        &--grid{
+            @media screen and (min-width: 576px){
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+    &__fg12{
+        grid-column: 1/2;
+    }
+    &__fg13{
+        @media screen and (min-width: 576px){
+            grid-column: 1/3;
+        }
+    }
+    &__hint{
+        margin-top: -3px;
+    }
+    &__btn{
+        width: 100%;
+        height: 46px;
+        margin-top: -8px;
+    }
+}
+
+.modal2{
+    .modal__btn{
+        margin-top: -3px;
+    }
+}
+
+.modal3{
+    .modal{
+        &__dialog{
+            width: 632px;
+        }
+    }
+}
+
+@media screen and (min-width: 576px){
+    .modal3{
+        .modal{
+            &__dialog{
+                padding: 30px 44px;
+            }
+            &__hint{
+                margin: 0;
+            }
+            &__btn{
+                width: 214px;
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .modal{
+        &__close{
+            right: 15px;
+            top: 15px;
+            transform: unset;
+            width: 15px;
+            height: 15px;
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+}
