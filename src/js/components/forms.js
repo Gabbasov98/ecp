@@ -7,6 +7,7 @@ $(".validate-form input[type='tel']").on('change', function () {
         $(this).removeClass("error")
     } else{
         $(this).addClass("error")
+        $(this).parents(".validate-form").find(".modal__btn").prop("disabled",true)
     }
 
 })
