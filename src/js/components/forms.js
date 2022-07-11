@@ -1,13 +1,140 @@
-$(".validate-form input[type='tel']").on('change', function () {
-    let phoneVal = $(this).val()
-    phoneVal = phoneVal.replaceAll('_', '').length;
-
-    if(phoneVal==18){
-        $(this).parents(".validate-form").find(".modal__btn").prop("disabled",false)
-        $(this).removeClass("error")
-    } else{
-        $(this).addClass("error")
-        $(this).parents(".validate-form").find(".modal__btn").prop("disabled",true)
+$("#callForm .modal__btn").click(function (e) {
+    e.preventDefault()
+    if(callFormValidate()) {
+        $("#callForm").submit()
     }
-
 })
+
+function callFormValidate(){
+    let clientNameIsValid = false
+    let phoneIsValid = false
+    let emailNameIsValid = false
+
+
+    let clientNameInput = $("#callForm input[name='name']")
+    clientNameIsValid = fieldIsEmpty($(clientNameInput))
+
+
+    let phoneInput = $("#callForm input[name='tel']")
+    phoneIsValid = phoneFieldValidate($(phoneInput))
+
+
+    let emailInput = $("#callForm input[name='email']")
+    emailNameIsValid = fieldIsEmpty($(emailInput))
+    emailNameIsValid = emailFieldValidate($(emailInput))
+
+
+    if(clientNameIsValid && phoneIsValid && emailNameIsValid) {
+        return true
+    } else{
+        return false
+    }
+}
+
+$("#ecpForm .modal__btn").click(function (e) {
+    e.preventDefault()
+    if(ecpFormValidate()) {
+        $("#ecpForm").submit()
+    }
+})
+
+function ecpFormValidate(){
+    let clientNameIsValid = false
+    let phoneIsValid = false
+
+
+    let clientNameInput = $("#ecpForm input[name='name']")
+    clientNameIsValid = fieldIsEmpty($(clientNameInput))
+
+
+    let phoneInput = $("#ecpForm input[name='tel']")
+    phoneIsValid = phoneFieldValidate($(phoneInput))
+
+
+
+
+    if(clientNameIsValid && phoneIsValid) {
+        return true
+    } else{
+        return false
+    }
+}
+
+$("#consultForm .modal__btn").click(function (e) {
+    e.preventDefault()
+    if(consultFormValidate()) {
+        $("#consultForm").submit()
+    }
+})
+
+function consultFormValidate(){
+    let clientNameIsValid = false
+    let phoneIsValid = false
+    let emailNameIsValid = false
+    let questionNameIsValid = false
+
+
+    let clientNameInput = $("#consultForm input[name='name']")
+    clientNameIsValid = fieldIsEmpty($(clientNameInput))
+
+
+    let phoneInput = $("#consultForm input[name='tel']")
+    phoneIsValid = phoneFieldValidate($(phoneInput))
+
+
+    let emailInput = $("#consultForm input[name='email']")
+    emailNameIsValid = fieldIsEmpty($(emailInput))
+    emailNameIsValid = emailFieldValidate($(emailInput))
+
+    let questionInput = $("#consultForm textarea[name='question']")
+    questionNameIsValid = fieldIsEmpty($(questionInput))
+
+
+    if(clientNameIsValid && phoneIsValid && emailNameIsValid) {
+        return true
+    } else{
+        return false
+    }
+}
+
+
+function fieldIsEmpty(field) {
+    let fieldVal = $(field).val()
+
+    if (fieldVal) {
+        $(field).removeClass("error")
+        return true
+    } else {
+        $(field).addClass("error")
+        return false
+    }
+}
+
+
+function phoneFieldValidate(field) {
+    let fieldVal = $(field).val()
+    fieldVal = fieldVal.replaceAll('_', '').length;
+
+    if (fieldVal === 18) {
+        $(field).removeClass("error")
+        return true
+    } else {
+        $(field).addClass("error")
+        return false
+    }
+}
+
+
+function emailFieldValidate(field) {
+    let emailPattern = pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+    let fieldVal = $(field).val()
+
+    if(fieldVal.match(emailPattern)){
+        $(field).removeClass("error")
+        return true
+    }
+    else{
+        $(field).addClass("error")
+        return false
+    }
+}

@@ -1,5 +1,5 @@
 $(".header__burger").click(function() {
-    $(this).toggleClass("header__burger--active")
+    $("body").toggleClass("fixed-body")
     $(".header").toggleClass("header--active")
 })
 

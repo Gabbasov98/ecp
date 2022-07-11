@@ -7,7 +7,7 @@
     margin: 0;
     &__error{
         position: absolute;
-        color: red;
+        color: #ff0000;
         top: 100%;
         left: 0;
         opacity: 0;
@@ -90,5 +90,40 @@
     transition: all 1.25s;
     &--active{
         transform: translateY(0);
+    }
+}
+
+.scroll-up {
+    z-index: 22;
+    position: fixed;
+    right: 65px;
+    bottom: 65px;
+    width: 64px;
+    height: 64px;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    &:hover {
+        background-color: $primary;
+    }
+    @media screen and (max-width: 800px) {
+        right: 12px;
+        bottom: 20px;
+        width: 32px;
+        height: 32px;
+        svg {
+            width: 12px;
+            height: auto;
+        }
+    }
+    &--active {
+        visibility: visible;
+        opacity: 1;
     }
 }

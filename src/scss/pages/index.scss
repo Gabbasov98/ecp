@@ -586,6 +586,14 @@
   }
 }
 
+@media screen and (max-width: 1440px){
+  .info{
+    &__img{
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: 1200px){
   .consult{
     &__items{
@@ -775,12 +783,6 @@
     }
     &__phone{
       margin-left: 0;
-    }
-  }
-
-  .info{
-    &__img{
-      display: none;
     }
   }
 }

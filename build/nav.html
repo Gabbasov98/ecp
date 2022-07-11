@@ -54,19 +54,21 @@
             <span>Заказать</span> <br> обратный звонок
         </div>
         <div class="modal__desc body-text">Оставьте заявку и наш юрист  свяжется с вами</div>
-        <form class="modal__form validate-form">
+        <form id="callForm" class="modal__form validate-form">
             <fieldset class='mfg'>
-                <input type='text' placeholder="Имя"/>
-            </fieldset>
-            <fieldset class='mfg'>
-                <input type='tel' placeholder="Телефон *"/>
+                <input type='text' name="name" placeholder="Имя"/>
                 <span class="mfg__error body-text3">Неправильно заполнено поле</span>
             </fieldset>
             <fieldset class='mfg'>
-                <input type='email' placeholder="Email"/>
+                <input type='tel' name="tel" placeholder="Телефон *"/>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
+            </fieldset>
+            <fieldset class='mfg'>
+                <input type='email' name="email" placeholder="Email"/>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
             </fieldset>
             <div class="modal__hint body-text3">Нажимая кнопку я даю своё согласие на обработку моих персональных данных</div>
-            <button disabled class="modal__btn mbtn mbtn-primary">
+            <button class="modal__btn mbtn mbtn-primary">
                 <span>Оправить</span>
             </button>
         </form>
@@ -86,15 +88,16 @@
             <span>Подобрать ЭЦП</span>
         </div>
         <div class="modal__desc body-text">Оставьте заявку и наш юрист  свяжется с вами</div>
-        <form class="modal__form validate-form">
+        <form id="ecpForm" class="modal__form validate-form">
             <fieldset class='mfg'>
-                <input type='text' placeholder="Имя"/>
-            </fieldset>
-            <fieldset class='mfg'>
-                <input type='tel' placeholder="Телефон *"/>
+                <input type='text' name="name" placeholder="Имя"/>
                 <span class="mfg__error body-text3">Неправильно заполнено поле</span>
             </fieldset>
-            <button disabled class="modal__btn mbtn mbtn-primary">
+            <fieldset class='mfg'>
+                <input type='tel' name="tel" placeholder="Телефон *"/>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
+            </fieldset>
+            <button type="submit" class="modal__btn mbtn mbtn-primary">
                 <span>Подобрать</span>
             </button>
         </form>
@@ -114,22 +117,25 @@
             <span>Заявка</span> на бесплатную консультацию
         </div>
         <div class="modal__desc body-text">Оставьте заявку и наш юрист  свяжется с вами</div>
-        <form class="modal__form modal__form--grid validate-form">
+        <form id="consultForm" class="modal__form modal__form--grid validate-form">
             <fieldset class='mfg'>
-                <input type='text' placeholder="Имя"/>
+                <input type='text' name="name" placeholder="Имя"/>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
             </fieldset>
             <fieldset class='mfg modal__fg12'>
-                <input type='tel' placeholder="Телефон *"/>
+                <input type='tel' name="tel" placeholder="Телефон *"/>
                 <span class="mfg__error body-text3">Неправильно заполнено поле</span>
             </fieldset>
             <fieldset class='mfg'>
-                <input type='email' placeholder="Email"/>
+                <input type='email' name="email" placeholder="Email"/>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
             </fieldset>
             <fieldset class='mfg modal__fg13'>
-                <textarea placeholder="Введите вопрос"></textarea>
+                <textarea name="question" placeholder="Введите вопрос"></textarea>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
             </fieldset>
             <div class="modal__hint body-text3">Нажимая кнопку я даю своё согласие на обработку моих персональных данных</div>
-            <button disabled class="modal__btn mbtn mbtn-primary">
+            <button type="submit" class="modal__btn mbtn mbtn-primary">
                 <span>Оправить</span>
             </button>
         </form>

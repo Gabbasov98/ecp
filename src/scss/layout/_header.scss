@@ -73,25 +73,7 @@
         right: 0;
       }
     }
-    &--active {
-      span {
-        &:nth-child(1) {
-          width: 100%;
-          transform: translateY(11px) rotate(-45deg);
-        }
-        &:nth-child(2) {
-          transform: scale(0);
-        }
-        &:nth-child(3) {
-          width: 100%;
-          transform: translateY(-10px) rotate(45deg);
-        }
-      }
-      &~.menu {
-        opacity: 1;
-        pointer-events: unset;
-      }
-    }
+
   }
 }
 
@@ -151,7 +133,23 @@
         &__burger{
           span{
             background: #fff;
+            &:nth-child(1) {
+              width: 100%;
+              transform: translateY(11px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+              transform: scale(0);
+            }
+            &:nth-child(3) {
+              width: 100%;
+              transform: translateY(-10px) rotate(45deg);
+            }
           }
+          &~.menu {
+            opacity: 1;
+            pointer-events: unset;
+          }
+
         }
       }
     }
