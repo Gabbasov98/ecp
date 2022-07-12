@@ -18,14 +18,14 @@ function animateMainBg(x,y) {
     // let coordinate5 = -150 * x -75
     // let coordinate6 = -38 * y -18
 
-    $(".main__img2").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 30px)`)
-    $(".main__img3").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 30px)`)
-    $(".e-signature__img1").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 30px)`)
-    $(".e-signature__img2").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 30px)`)
-    $(".e-signature__img3").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 30px)`)
-    $(".e-signature__img4").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 30px)`)
-    $(".e-signature__img5").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 30px)`)
-    $(".e-signature__img6").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 30px)`)
+    $(".main__img2").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
+    $(".main__img3").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
+    $(".e-signature__img1").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
+    $(".e-signature__img2").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
+    $(".e-signature__img3").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
+    $(".e-signature__img4").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
+    $(".e-signature__img5").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
+    $(".e-signature__img6").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
 }
 
 
