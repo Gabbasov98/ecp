@@ -6,25 +6,18 @@ $("#callForm .modal__btn").click(function (e) {
 })
 
 function callFormValidate(){
-    let clientNameIsValid = false
     let phoneIsValid = false
     let emailNameIsValid = false
-
-
-    let clientNameInput = $("#callForm input[name='name']")
-    clientNameIsValid = fieldIsEmpty($(clientNameInput))
 
 
     let phoneInput = $("#callForm input[name='tel']")
     phoneIsValid = phoneFieldValidate($(phoneInput))
 
-
     let emailInput = $("#callForm input[name='email']")
-    emailNameIsValid = fieldIsEmpty($(emailInput))
     emailNameIsValid = emailFieldValidate($(emailInput))
 
 
-    if(clientNameIsValid && phoneIsValid && emailNameIsValid) {
+    if(phoneIsValid && emailNameIsValid) {
         return true
     } else{
         return false
@@ -39,21 +32,14 @@ $("#ecpForm .modal__btn").click(function (e) {
 })
 
 function ecpFormValidate(){
-    let clientNameIsValid = false
     let phoneIsValid = false
-
-
-    let clientNameInput = $("#ecpForm input[name='name']")
-    clientNameIsValid = fieldIsEmpty($(clientNameInput))
 
 
     let phoneInput = $("#ecpForm input[name='tel']")
     phoneIsValid = phoneFieldValidate($(phoneInput))
 
 
-
-
-    if(clientNameIsValid && phoneIsValid) {
+    if(phoneIsValid) {
         return true
     } else{
         return false
@@ -68,29 +54,18 @@ $("#consultForm .modal__btn").click(function (e) {
 })
 
 function consultFormValidate(){
-    let clientNameIsValid = false
     let phoneIsValid = false
     let emailNameIsValid = false
-    let questionNameIsValid = false
-
-
-    let clientNameInput = $("#consultForm input[name='name']")
-    clientNameIsValid = fieldIsEmpty($(clientNameInput))
-
 
     let phoneInput = $("#consultForm input[name='tel']")
     phoneIsValid = phoneFieldValidate($(phoneInput))
 
 
     let emailInput = $("#consultForm input[name='email']")
-    emailNameIsValid = fieldIsEmpty($(emailInput))
     emailNameIsValid = emailFieldValidate($(emailInput))
 
-    let questionInput = $("#consultForm textarea[name='question']")
-    questionNameIsValid = fieldIsEmpty($(questionInput))
 
-
-    if(clientNameIsValid && phoneIsValid && emailNameIsValid) {
+    if(phoneIsValid && emailNameIsValid) {
         return true
     } else{
         return false
@@ -129,7 +104,14 @@ function emailFieldValidate(field) {
     let emailPattern = pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
     let fieldVal = $(field).val()
 
-    if(fieldVal.match(emailPattern)){
+    console.log(fieldVal)
+
+    if(!fieldVal){
+        // $(field).addClass("error")
+        return false
+    }
+
+    if(fieldVal.match(emailPattern) && fieldVal){
         $(field).removeClass("error")
         return true
     }
