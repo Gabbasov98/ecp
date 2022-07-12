@@ -89,6 +89,22 @@
     }
 }
 
+.modal4{
+    text-align: center;
+    .modal{
+        &__dialog{
+            width: 300px;
+            padding: 35px 20px;
+        }
+        &__title{
+            margin-top: 18px;
+        }
+        &__desc{
+            margin-top: 4px;
+        }
+    }
+}
+
 @media screen and (min-width: 576px){
     .modal3{
         .modal{

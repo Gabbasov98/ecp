@@ -1,7 +1,8 @@
 $("#callForm .modal__btn").click(function (e) {
     e.preventDefault()
     if(callFormValidate()) {
-        $("#callForm").submit()
+        $('.modal').removeClass("modal--active")
+        $('#thankModal').addClass("modal--active")
     }
 })
 
@@ -27,7 +28,8 @@ function callFormValidate(){
 $("#ecpForm .modal__btn").click(function (e) {
     e.preventDefault()
     if(ecpFormValidate()) {
-        $("#ecpForm").submit()
+        $('.modal').removeClass("modal--active")
+        $('#thankModal').addClass("modal--active")
     }
 })
 
@@ -49,7 +51,8 @@ function ecpFormValidate(){
 $("#consultForm .modal__btn").click(function (e) {
     e.preventDefault()
     if(consultFormValidate()) {
-        $("#consultForm").submit()
+        $('.modal').removeClass("modal--active")
+        $('#thankModal').addClass("modal--active")
     }
 })
 
@@ -104,11 +107,8 @@ function emailFieldValidate(field) {
     let emailPattern = pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
     let fieldVal = $(field).val()
 
-    console.log(fieldVal)
-
     if(!fieldVal){
-        // $(field).addClass("error")
-        return false
+        return true
     }
 
     if(fieldVal.match(emailPattern) && fieldVal){
