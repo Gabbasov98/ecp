@@ -9,14 +9,17 @@ $(document).mousemove(function( event ) {
     let y = event.pageY/window.innerHeight
     animateMainBg(x,y)
 });
+let coordinate1 = 0
+let coordinate2 = 0
 
 function animateMainBg(x,y) {
-    let coordinate1 = -10 * x -5
-    let coordinate2 = -10 * y -5
-    // let coordinate3 = -50 * x -25
-    // let coordinate4 = -12.5 * y -6.25
-    // let coordinate5 = -150 * x -75
-    // let coordinate6 = -38 * y -18
+
+    x = x - 1
+    y = y - 1
+
+    coordinate1 = x * 10
+    coordinate2 = y * 10
+
 
     $(".main__img2").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
     $(".main__img3").css('transform',`translate3d(${coordinate1}px, ${coordinate2}px, 0)`)
