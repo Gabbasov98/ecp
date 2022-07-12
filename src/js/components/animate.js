@@ -11,8 +11,8 @@ $(document).mousemove(function( event ) {
 });
 
 function animateMainBg(x,y) {
-    let coordinate1 = -100 * x -50
-    let coordinate2 = -25 * y -12.25
+    let coordinate1 = -10 * x -5
+    let coordinate2 = -10 * y -5
     // let coordinate3 = -50 * x -25
     // let coordinate4 = -12.5 * y -6.25
     // let coordinate5 = -150 * x -75
