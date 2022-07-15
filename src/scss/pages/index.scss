@@ -1036,3 +1036,57 @@
   position: absolute;
   right: 70px;
 }
+
+.layer.layer_1{
+  position: absolute;
+  bottom: 40px;
+  left: auto;
+  right: 4px;
+  width: 334px;
+  top: auto;
+}
+
+.layer.layer_2 {
+  position: absolute;
+  top: auto ;
+  bottom: 116px ;
+  left: auto ;
+  right: 39px ;
+  width: 262px ;
+}
+
+.layer.layer_3 {
+  position: absolute;
+  width: 290px;
+  right: 78px ;
+  left: auto ;
+  bottom: -8px;
+  top: auto;
+}
+
+.layer.layer_4 {
+  position: absolute;
+  left: auto;
+  bottom: -17px;
+  right: 50px ;
+  width: 154px;
+  top: auto;
+}
+
+.layer.layer_5 {
+  position: absolute;
+  top: auto ;
+  width: 160px;
+  bottom: 143px ;
+  left: -7px ;
+  z-index: -1;
+}
+
+.layer.layer_6{
+  position: absolute;
+  width: 127px;
+  top: 89px ;
+  left: auto;
+  right: -13px;
+  z-index: -1;
+}
