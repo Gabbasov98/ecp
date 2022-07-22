@@ -23,6 +23,7 @@ $(document).ready(function() {
             top = $(idc).offset().top;
         $('body,html').animate({ scrollTop: top - 55 }, 0);
         $(".header").removeClass("header--active")
+        $("body").removeClass("fixed-body")
     });
 
 
