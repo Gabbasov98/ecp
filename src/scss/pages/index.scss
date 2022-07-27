@@ -667,6 +667,11 @@
     }
     &__bottom{
       margin-top: 40px;
+      display: block;
+    }
+    &__price{
+      padding: 0;
+      margin: 25px 0 0;
     }
     &__items{
       width: 330px;
@@ -803,13 +808,7 @@
       font-size: 20px;
       line-height: 32px;
     }
-    &__bottom{
-      display: block;
-    }
-    &__price{
-      padding: 0;
-      margin: 25px 0 0;
-    }
+
     &__btn{
       font-size: 12px;
       height: 45px;
