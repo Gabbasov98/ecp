@@ -187,6 +187,7 @@
       margin: 40px 0 0 0;
     }
   }
+
   .nav{
     display: block;
     &__link{
@@ -202,6 +203,20 @@
 @media screen and (max-width: 576px){
   .header{
     padding: 5px 0;
+    &--active {
+      .header{
+        &__burger{
+          span {
+            &:nth-child(1) {
+              transform: translateY(9px) rotate(-45deg);
+            }
+            &:nth-child(3) {
+              transform: translateY(-9px) rotate(45deg);
+            }
+          }
+        }
+      }
+    }
     &__right{
       padding-top: 80px;
     }
@@ -215,16 +230,7 @@
       span{
         height: 2px;
       }
-      &--active {
-        span {
-          &:nth-child(1) {
-            transform: translateY(9px) rotate(-45deg);
-          }
-          &:nth-child(3) {
-            transform: translateY(-9px) rotate(45deg);
-          }
-        }
-      }
+
     }
   }
 }

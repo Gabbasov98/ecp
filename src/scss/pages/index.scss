@@ -98,6 +98,9 @@
   &__price{
     margin-left: 20px;
     padding-top: 32px;
+    @media screen and (min-width: 992px){
+      transform: translateY(0) !important;
+    }
   }
 }
 
