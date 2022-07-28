@@ -193,6 +193,7 @@
     &__link{
       display: block;
       margin-bottom: 20px;
+      &--active,
       &:hover{
         color: $gray2;
       }
